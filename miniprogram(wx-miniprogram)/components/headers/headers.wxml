@@ -1,0 +1,18 @@
+<!--components/headers/headers.wxml-->
+<view class="headers">
+
+  <view class="weekNo">
+    <block wx:for="{{weekday}}" wx:key="index">
+      <text class="tag">{{weekday[index]}}</text>
+    </block>
+  </view>
+
+  <view class="date">
+    <block wx:for="{{7}}" wx:key="index">
+      <text class="time">{{month}}/{{day+index}}</text>
+    </block>
+  </view>
+ 
+
+  
+</view>

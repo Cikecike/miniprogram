@@ -1,0 +1,108 @@
+/* components/courseBlock1.wxss */
+.courseBlock{
+  display: flex;
+  flex-direction: column;
+  width: 94rpx;
+  height: 150rpx;
+
+  border-radius: 15rpx;
+
+  margin:0 5rpx 10rpx 5rpx;
+  font-size: 20rpx;
+  color: rgb(253, 249, 249);
+
+}
+.course{
+  text-align: center;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  word-wrap: break-word;word-break: break-all;white-space: pre-line;
+
+  margin-top:25rpx;
+
+  font-size: 23rpx;
+  font-weight: bold;
+  /* width: 98rpx; */
+  height: 150rpx;
+  color: black;
+
+
+}
+
+.address{
+  height: 90rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;word-break: break-all;white-space: pre-line;
+  color: white;
+  padding: 6rpx 6rpx 6rpx 6rpx;
+
+  font-size: 20.5rpx;
+  font-weight: 500;
+
+}
+
+
+/*mask*/  
+.drawer_screen {  
+  width: 100%;  
+  height: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 1000;  
+  background: #000;  
+  opacity: 0.5;  
+  overflow: hidden;  
+}  
+  
+/*content*/  
+/* 模态框 */
+.drawer_box {  
+  width: 550rpx;  
+  height: 620rpx;
+  /* overflow: hidden;   */
+  position: fixed;  
+  top: 50%;  
+  left: 0;  
+  z-index: 1001;  
+  background: #FFFFFF;  
+  /* background-image: url("http://weixin.siyanli.net.cn/static/miniimg/guize-01.png"); */
+  margin: -150px 100rpx 0 100rpx;  
+  border-radius: 10px;  
+}  
+
+.cname{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:20rpx 0rpx 20rpx 0rpx;
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+.c_info{
+  width: 100%;
+  display: flex;
+  padding:20rpx 0rpx 20rpx 0rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_label{
+  margin: 30rpx 0 0 0;
+  font-size: 25rpx;
+}
+
+.id{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 23rpx;
+  color: rgb(180, 177, 177);
+}

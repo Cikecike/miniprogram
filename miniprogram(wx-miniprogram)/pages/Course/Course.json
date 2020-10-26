@@ -1,0 +1,20 @@
+{
+  "usingComponents": {
+    "headers":"../../components/headers/headers",
+    "courseBlock": "../../components/courseBlock/courseBlock",
+    "courseBlock1": "../../components/courseBlock1/courseBlock1",
+    "courseBlock3": "../../components/courseBlock3/courseBlock3",
+    "courseBlock4": "../../components/courseBlock4/courseBlock4",
+    "emptyBlock": "../../components/emptyBlock/emptyBlock",
+    "emptyBlock0": "../../components/emptyBlock0/emptyBlock0",
+    "emptyBlock3": "../../components/emptyBlock3/emptyBlock3",
+    "Tabbar": "../../components/Tabbar/Tabbar"
+
+  },
+
+  "navigationBarTextStyle":"white",
+
+  "enablePullDownRefresh": true,
+  "disableScroll": false
+
+}

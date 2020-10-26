@@ -1,0 +1,9 @@
+<!--components/Tabbar/Tabbar.wxml-->
+
+
+<view class="footer-holder"></view>
+<view class="footer_fixed-bottom" style="position:fixed;bottom:0;">
+  <button class="Homepage" hover-class="bt_hover" bindtap="gethomepage">首页</button>
+  <button class="Course" hover-class="bt_hover" bindtap="getcourse">课表</button>
+  <button class="userpage" hover-class="bt_hover" bindtap="getuserpage">我的</button>
+</view>

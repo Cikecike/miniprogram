@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+      "icMain": "../../../components/icMain/icMain"
+    },
+    "backgroundColor": "#ffffff",
+    "navigationBarTitleText": "详细信息",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "disableScroll": false
+}

@@ -1,0 +1,5 @@
+<!--components/fuction/fuction.wxml-->
+<view>
+  <button></button>
+  <text>功能</text>
+</view>

@@ -1,0 +1,43 @@
+/* components/itemCard.wxss */
+
+.container{
+  display: flex;
+  flex-direction: row;
+
+  margin: 0 0 10rpx 18rpx;
+  background-color: white;
+
+  width: 350rpx;
+  height: 360rpx;
+
+  border-radius: 20rpx;
+  
+}
+
+.Goods_Img{
+
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+
+  width: 350rpx;
+  height: 250rpx;
+  background-color: rgb(115, 160, 152);
+  margin: 0rpx 0 0 0rpx;
+
+  
+}
+
+
+.infoText{
+  margin: -30rpx 0 0 10rpx;
+  font-size: 25rpx;
+  font-weight: 300;
+
+  width: 350rpx;
+  display: flex;
+
+}
+
+.click{
+  background-color: none;
+}

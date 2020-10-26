@@ -1,0 +1,90 @@
+/* components/orderItem/orderItem.wxss *//* components/itemCard.wxss */
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  margin: 10rpx 0 30rpx;
+  background-color: rgb(253, 253, 253);
+
+  width: 715rpx;
+  height: 400rpx;
+
+  border-radius: 20rpx;
+}
+
+.Goods_Img{
+
+  border-radius: 15rpx;
+
+  width: 230rpx;
+  height: 230rpx;
+  background-color: rgb(115, 160, 152);
+  margin: 20rpx 0 0 40rpx;
+
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.Purchase{
+  margin: 0rpx 0 0 0;
+  display: flex;
+  flex-direction: column-reverse;
+  
+  height: 60rpx;
+
+}
+
+.Purchase_bt{
+  font-size: 25rpx;
+  width: 715rpx;
+  height: 50rpx;
+  color: rgb(245, 76, 24);
+  background-color:  rgb(253, 253, 253);
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+
+  padding: 0 0 5rpx 0
+}
+
+.bt_hover{
+  background-color: gainsboro;
+}
+
+.storeCard{
+  margin: 20rpx 0 0rpx 0;
+  height: 80rpx;
+
+  border-width: 10rpx;
+  border-color: black;
+
+}
+
+.storeName{
+  font-size: 31rpx;
+  font-weight:bold;
+  color:black;
+  width: 700rpx;
+  height: 80rpx;
+  padding:  5rpx 0 0 10rpx;
+  margin: 20rpx;
+
+}
+
+.infoCard{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 10rpx 0;
+}
+
+.property_area{
+  display: flex;
+  height: 230rpx;
+  width: 450rpx;
+}
+
+.infoText{
+  margin: 0 0 0 30rpx;
+  font-size: 27rpx;
+  font-weight: 700;
+}

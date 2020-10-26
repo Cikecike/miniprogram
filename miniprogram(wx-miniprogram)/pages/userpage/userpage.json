@@ -1,0 +1,10 @@
+{
+  "backgroundColor": "#ffffff",
+  "usingComponents": {
+    "Tabbar": "../../../components/Tabbar/Tabbar"
+  },
+  "navigationBarTitleText": "个人信息",
+  "navigationBarBackgroundColor": "#ffffff",
+  "enablePullDownRefresh": false,
+  "disableScroll":false
+}

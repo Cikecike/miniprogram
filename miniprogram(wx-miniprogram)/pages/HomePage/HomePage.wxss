@@ -1,0 +1,104 @@
+/* pages/BrowseGoods/BrowseGoods.wxss */
+
+page{
+  background-color:rgb(253, 253, 253);
+}
+
+
+
+
+.button{
+  height: 37px; 
+  width: 120rpx;
+
+  color:white;
+  background-color:#c3ccdb; 
+  border-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 12px;
+  font-family:"微软雅黑";
+
+
+}
+
+.Shuffling{
+
+  /* width: 750rpx; */
+  height:480rpx;
+
+  margin: 10rpx 10rpx 15rpx 10rpx
+
+}
+
+.swiper_top{
+  margin: 20rpx 20rpx 10rpx 20rpx;/*四个参数 按上、右、下、左的顺序作用于四边*/
+  
+  border-radius: 8px;
+  height: 100%;
+
+}
+
+.slide-image{
+  border-radius: 8px;
+
+  width: 100%;
+  height: 210px
+}
+
+
+
+swiper{
+  border-radius: 8px;
+}
+
+
+.footer-holder{
+  height: 50rpx;
+  /* background-color: rgba(238, 238, 238, 0.432); */
+}
+
+.msgContainer{
+  border-top-width: 1rpx;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0rpx;
+  border-style:solid;
+  border-color: rgba(220, 220, 220, 0.473);
+}
+
+
+.None_info{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.tips{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx;
+  font-weight: bolder;
+  color: rgba(192, 187, 187, 0.61);
+  margin: 50rpx 0 0 0 ;
+}
+.empty{
+  /* opacity: 0.5; */
+  height: 170rpx;
+  width: 200rpx;
+  max-width: 0 0 200rpx 0;
+}
+
+.follow_icon{
+  position: fixed;
+  margin: 0 10rpx;
+  width:70rpx;
+  height:70rpx;
+  bottom: 30rpx;
+  right: 20rpx;
+}
+

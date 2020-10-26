@@ -1,0 +1,58 @@
+/* components/headers/headers.wxss */
+.headers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: #c3ccdb;
+  width: 750rpx;
+  height: 100rpx;
+
+}
+
+.weekNo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  font-weight: 700;
+  font-size: 30rpx;
+  width: 750rpx;
+  height: 50rpx;
+  padding: 0 0 0 30rpx;
+}
+
+
+.tag{
+  text-align: center;
+  
+  font-size: 25rpx;
+  color: whitesmoke;
+  width: 94rpx;
+
+  border-radius: 5rpx;
+  margin:0 5rpx 5rpx 5rpx;
+}
+
+.date{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+
+  width: 750rpx;
+  height: 50rpx;
+  padding: 0 0 0 30rpx;
+
+}
+
+.time{
+  text-align: center;
+  font-size: 25rpx;
+  color: whitesmoke;
+  width: 94rpx;
+
+  border-radius: 5rpx;
+  margin:0 5rpx 5rpx 5rpx;
+}

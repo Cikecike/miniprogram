@@ -1,0 +1,6 @@
+<!--miniprogram/otherPackages/pages/Orders/Orders.wxml-->
+<view class="container">
+
+  <orderitem></orderitem>
+
+</view>

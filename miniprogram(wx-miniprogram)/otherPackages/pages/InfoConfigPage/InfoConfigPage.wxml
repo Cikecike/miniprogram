@@ -1,0 +1,31 @@
+<!--miniprogram/otherPackages/pages/InfoConfigPage.wxml-->
+
+
+<!-- name=“userName”属性，可以区别哪个输入框，并通过添加
+属性提交：bindsubmit="方法名" 重置：bindreset="方法名"，达到清除输入框内容的目的
+js文件中的用法，e.detail.value.userName.length-->
+<view class="container">
+  <view class="title_container">
+    <text class="Warn">UniveraryUnion使用声明</text>
+    <text class="title">账户信息只在更新信息时使用</text>
+    <text class="title">不在服务器进行持久化存储</text>
+  </view>
+  
+
+
+  <view class="itemView">
+    <text class="label">用户名：</text>
+    <input class="input" name="userName" placeholder="{{userN===''?'请输入用户名':userN}}" bindinput="userNameInput" />
+  </view>
+  <view class="itemView">
+    <text class="label">密码：</text>
+    <input class="input" password placeholder="{{passW===''?'请输入密码':'*******'}}" bindinput="passWdInput" />
+  </view>
+  <view class="viewName">
+    <button class="Btn" hover-class='btn_hover' bindtap="loginBtnClick">提交</button>
+    <button class="Btn" hover-class='btn_hover' bindtap="resetBtnClick">修改</button>
+  </view>
+
+  <!-- <text class="tips">[@确认清除缓存后不退出该页面再次点击提交可恢复]</text> -->
+
+</view>

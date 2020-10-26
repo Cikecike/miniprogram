@@ -1,0 +1,6 @@
+/* miniprogram/otherPackages/pages/Orders/Orders.wxss */
+.container{
+  width: 100%;
+  height:100vh;
+  background-color: whitesmoke;
+}

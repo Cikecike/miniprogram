@@ -1,0 +1,20 @@
+<!--components/functionCard/functionCard.wxml-->
+
+<view class="container">
+  <view class="line">
+
+    <button class="course" hover-class="bt_hover" bindtap="getcourse">课表查询</button>
+    <button class="bt" hover-class="bt_hover" bindtap="getscore">成绩查询</button>
+    <button class="bt" hover-class="bt_hover" bindtap="likeu">表白墙</button>
+
+
+
+  </view>
+
+  <view class="line">
+    <button class="bt" hover-class="bt_hover">求职说</button>
+    <button class="bt" hover-class="bt_hover">毕业季</button>
+
+  </view>
+
+</view>

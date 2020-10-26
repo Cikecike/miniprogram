@@ -1,0 +1,28 @@
+<!--components/courseBlock.wxml-->
+<!--components/courseBlock.wxml-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>  
+<!--content-->  
+<!--使用animation属性指定需要执行的动画-->  
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">  
+  <!--drawer content-->
+  <!-- <view class="circle"></view>   -->
+  <view class="drawer_content">   
+  <text class="cname">{{cName}}</text>
+    <view class="c_info">
+      <text class="id">课程id：{{c_id}}</text>
+      <text class="info_label">课程性质：{{c_property}}</text>
+      <text class="info_label">课程节次：{{c_jc}}节</text>
+      <text class="info_label">课室：{{address}}</text>
+      <text class="info_label">任课教师：{{t_name}}</text>
+      <text class="info_label">教师职称：{{t_title}}</text>
+      <text class="info_label">课程周次：{{c_week}}</text>
+      <text class="info_label">课程学时：{{c_time}}</text>
+            
+    </view>
+  </view>
+</view> 
+
+<view class="courseBlock" style=" background-color:{{_color}};opacity:{{op}}" bindtap="powerDrawer" data-statu="open">
+  <text class="course">{{cName}}</text>
+  <text class="address">{{address}}</text>
+</view>

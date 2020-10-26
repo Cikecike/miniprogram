@@ -1,0 +1,25 @@
+<!--miniprogram/pages/ItemPage.wxml-->
+<!--pages/BrowseGoods/BrowseGoods.wxml-->
+<view class="ItemPage">
+
+  <view class="Shuffling">
+    <swiper class="swiper_top" autoplay interval="5000" indicator-dots="true" indicator-color="white" indicator-active-color="red">
+
+
+      <swiper-item wx:for="{{SwiperList}}" wx:key="{{index}}">
+        <navigator>
+          <image mode="aspectFill" src="{{item}}" class="slide-image" />
+        </navigator>
+
+      </swiper-item>
+
+
+    </swiper>
+  </view>
+
+
+  
+  <view>
+    <text class="likeIt_text">- - 猜你喜欢👇 - -</text>
+  </view>
+</view>

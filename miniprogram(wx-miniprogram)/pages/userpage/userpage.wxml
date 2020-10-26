@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container" style="background-color:{{colorStyle}}">
+  <view class="userinfo" style="background-color:{{colorStyle}}">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname" style="background-color:{{colorStyle}}">{{userInfo.nickName}}</text>
+    </block>
+
+    <view class="usermotto">
+      <view>
+        <text class="usermt">{{motto}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+
+
+
+
+  <view class="Info" style="background-color:{{colorStyle}}">
+
+    <view>
+      <navigator url="../../otherPackages/pages/InfoConfigPage/InfoConfigPage" open-type="navigate" class="uploader-text">
+        <button class="bt" hover-class='btn_hover'>个人信息</button>
+      </navigator>
+    </view>
+
+    <navigator url="../../otherPackages/pages/Orders/Orders">
+      <view>
+        <button class="bt" hover-class='btn_hover'>我的消息推送</button>
+      </view>
+    </navigator>
+    <view>
+      <navigator url="../../otherPackages/pages/im/room/room" open-type="navigate" class="uploader-text">
+        <button bindtap="popLoading" class="bt" hover-class='btn_hover'>联系开发者</button>
+      </navigator>
+
+    </view>
+
+    <view style="background-color:{{colorStyle}}">
+      <navigator url="../../otherPackages/pages/ItemPage/ItemPage" open-type="navigate"><button class="bt" hover-class='btn_hover'>其他</button>
+      </navigator>
+    </view>
+
+    <text class="foot">@版权所有UniversaryUnion</text>
+
+  </view>
+
+</view>
+<!-- <Tabbar></Tabbar> -->

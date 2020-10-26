@@ -1,0 +1,21 @@
+<!--components/orderItem/orderItem.wxml-->
+<!--components/itemCard.wxml-->
+
+<!-- 传递参数到文章页面 -->
+<navigator url="../../otherPackages/pages/Arcticle/Arcticle?artic_key={{artic_key}}">
+  <view class="container">
+    <view class="Arc_intro">
+
+      <text class="title">{{title}}</text>
+      <text class="intro_sum">{{text}}</text>
+
+    </view>
+    <!-- <view class="Arc_img">
+
+      <image mode="widthFix" src="../../icons/1.jpg" mode="aspectFit" class="Img_"></image>
+
+    </view> -->
+
+
+  </view>
+</navigator>

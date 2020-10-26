@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+      "icMain": "../../components/icMain/icMain"
+    },
+    "navigationBarTitleText": "HealthyFruitStore",
+    "enablePullDownRefresh": true,
+    "disableScroll": false
+}

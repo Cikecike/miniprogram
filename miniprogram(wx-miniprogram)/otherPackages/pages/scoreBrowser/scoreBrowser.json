@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+
+    "itemCard":"../../../components/itemCard/itemCard"
+  },
+
+  "backgroundColor": "#c3ccdb",
+  "enablePullDownRefresh": true,
+  "disableScroll": false
+}

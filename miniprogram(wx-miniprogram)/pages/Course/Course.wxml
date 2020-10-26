@@ -1,0 +1,97 @@
+<!--pages/ShoppingCart/ShoppingCart.wxml-->
+<view class="container">
+
+  <!--周次导航-->
+  <view class="nav_warp">
+    <!--滚动导航-->
+    <scroll-view class="nav" scroll-x scroll-left="{{scrollLeft}}">
+      <!--判断当前所在导航页 ,声明绑定点击事件bintap-->
+      <view bindtap="activeNav_all" data-index="{{-1}}" class="nav_item {{curIndexNav===-1?'active':''}}">
+        All
+      </view>
+      <view bindtap="activeNav" data-index="{{index}}" class="nav_item {{index===curIndexNav?'active':''}}" wx:for="{{21}}" wx:key="index">
+        {{index+1}}
+      </view>
+
+    </scroll-view>
+  </view>
+
+  <headers/>
+
+  <view class="Pageholder">
+    <view class="label_container">
+      <view class="labels" data-index="{{index}}" wx:for="{{6}}" wx:key="index">
+        <view class="time_label">{{index*2+1}}</view>
+        <view class="time_label">{{index*2+2}}</view>
+      </view>
+    </view>
+
+
+    <view class="Pages" wx:if="{{curPage!=-1}}" bindtouchstart="touchStart" animation="{{ani_left}}" bindtouchmove="touchMove" bindtouchend="touchEnd" wx:for="{{21}}" wx:for-item="Pageindex" wx:key="index_p">
+
+      <view class="blocker" wx:if="{{curPage===Pageindex}}">
+
+        <view class="colunms" wx:for="{{course_Table}}" wx:for-item="day" wx:key="index_c">
+          <view class="rows" wx:for="{{day}}" wx:for-item="course" wx:key="index_r">
+
+            <!-- <text>test{{course_JSON[course]["c_len"]}}</text> -->
+            
+            <courseBlock1 wx:if="{{(course_JSON[course]['c_len'])===0}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock1>
+
+            <courseBlock wx:if="{{(course_JSON[course]['c_len'])===1}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock>
+              
+            <courseBlock3 wx:elif="{{(course_JSON[course]['c_len'])===2}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock3>
+
+            <courseBlock4 wx:elif="{{(course_JSON[course]['c_len'])===3}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock4>
+
+
+            <emptyBlock wx:elif="{{course===-1}}"></emptyBlock>
+            <emptyBlock0 wx:elif="{{course===-2}}"></emptyBlock0>
+            <emptyBlock3 wx:elif="{{course===-2}}"></emptyBlock3>
+
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="Pages" wx:if="{{curPage===-1}}" bindtouchstart="touchStart" animation="{{ani_left}}" bindtouchmove="touchMove" bindtouchend="touchEnd">
+      <view class="blocker">
+        <view class="colunms" wx:for="{{course_Table}}" wx:for-item="day" wx:key="index_c">
+          <view class="rows" wx:for="{{day}}" wx:for-item="course" wx:key="index_r">
+
+            <!-- <text>test{{course_JSON[course]["c_len"]}}</text> -->
+
+            <courseBlock1 wx:if="{{(course_JSON[course]['c_len'])===0}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock1>
+
+
+            <courseBlock wx:if="{{(course_JSON[course]['c_len'])===1}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock>
+
+            <courseBlock3 wx:elif="{{(course_JSON[course]['c_len'])===2}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock3>
+
+            <courseBlock4 wx:elif="{{(course_JSON[course]['c_len'])===3}}" _color="{{background_color}}" op="{{opacity}}" cName="{{course_JSON[course]['kcmc']}}" address="{{course_JSON[course]['cdmc']}}" c_id="{{course_JSON[course]['cd_id']}}" c_time="{{course_JSON[course]['kcxszc']}}"
+              c_property="{{course_JSON[course]['khfsmc']}}" c_week="{{course_JSON[course]['zcs']}}" t_name="{{course_JSON[course]['xm']}}" t_title="{{course_JSON[course]['zcmc']}}" c_jc="{{course_JSON[course]['jcs']}}"></courseBlock4>
+
+            <emptyBlock wx:elif="{{course===-1}}"></emptyBlock>
+            <emptyBlock0 wx:elif="{{course===-2}}"></emptyBlock0>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 添加固定悬浮按钮 -->
+  <view bindtap='adddetial' style="opacity:0.8">
+    <image class="follow_icon" src="../../images/s2.png"></image>
+  </view>
+
+</view>
+
+<!-- <Tabbar></Tabbar> -->

@@ -1,0 +1,18 @@
+<!--pages/BrowseGoods/BrowseGoods.wxml-->
+<view class="Browser">
+  <view class="headers">成\t绩\t单</view>
+
+  <view wx:if="{{score_JSON.length>0}}" class="colunms" wx:for="{{score_JSON}}" wx:for-item="score" wx:key="index_c">
+    <!-- <text>test{{course_JSON[course]["c_len"]}}</text> -->
+    <itemCard cName="{{score['kcmc']}}" c_score="{{score['cj']}}" credits="{{score['xf']}}" status="{{score['ksxz']}}" ksxz="{{score['khfsmc']}}" c_time="{{score['jxbmc']}}" />
+  </view>
+
+  <view wx:if="{{score_JSON.length===0}}" class="None_info">
+    <text class="tips">这里空空如也</text>
+  </view>
+
+  <view bindtap='GetScore' style="opacity:0.8">
+    <image class="follow_icon" src="{{imgSrc}}"></image>
+  </view>
+
+</view>

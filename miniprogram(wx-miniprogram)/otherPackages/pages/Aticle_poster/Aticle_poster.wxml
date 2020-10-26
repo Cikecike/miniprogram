@@ -1,0 +1,30 @@
+<!--miniprogram/otherPackages/pages/Aticle_poster/Aticle_poster.wxml-->
+<view class="Browser">
+  <view class="headers">文章编辑器</view>
+
+  <view class="title_container">
+    <text class="title">标题</text>
+    <input class="title_input" value="{{title}}" focus="{{input_focus_1}}" bindtap="input_1"  bindinput='title_Input' bindblur="inputBlur" placeholder="在这里输入文章标题,限制40字以内" hover-class="bt_hover"></input>
+
+  </view>
+
+
+  <view class="content_container">
+    <text class="content">封面链接</text>
+    <textarea class="content_input" value="{{cover_url}}" focus="{{input_focus_2}}" bindtap="input_2" bindinput='coverurl_Input' bindblur="inputBlur" placeholder="例：https://xxxx.jpg" auto-height='{{true}}'></textarea>
+  </view>
+
+
+  <view class="content_container">
+    <text class="content">正文</text>
+    <textarea maxlength = '-1'  class="content_input" value="{{content}}" focus="{{input_focus_3}}"  bindtap="input_3"  bindinput='contents_Input' bindblur="inputBlur" placeholder="在这里输入文章正文内容" auto-height='{{true}}'></textarea>
+  </view>
+
+  <view bindtap='Submit'>
+    <image class="follow_icon" src="../../../images/s1.png"></image>
+  </view>
+
+</view>
+
+
+

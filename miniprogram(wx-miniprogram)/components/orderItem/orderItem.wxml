@@ -1,0 +1,28 @@
+<!--components/orderItem/orderItem.wxml-->
+<!--components/itemCard.wxml-->
+<view class="container">
+  <navigator clas="nameCard" url="../../../otherPackages/pages/ItemPage/ItemPage">
+    <!--店铺url跳转-->
+    <view class="storeCard">
+
+      <text class="storeName">HealthyFruit专卖店 </text>
+
+    </view>
+
+
+    <!--商品信息区域-->
+    <view class="infoCard">
+      <image src="../../icons/1.jpg" mode="aspectFit" class="Goods_Img" />
+      <!--商品属性区域-->
+      <view class="property_area">
+
+        <text class="infoText">
+        【王小二】广西直邮，9.9元3斤限时抢购
+        订单号：226235261266616816
+        货运单号：44513165516511561
+        </text>
+      </view>
+    </view>
+  </navigator>
+
+</view>

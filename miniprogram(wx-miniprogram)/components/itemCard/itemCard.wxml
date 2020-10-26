@@ -1,0 +1,26 @@
+<!--components/itemCard.wxml-->
+<view class="container">
+
+  <view class="drawer_content">
+    <view class="headers">
+      <text class="cname">{{cName}}</text>
+      <view class="Score">
+        <text class="Score">分数：{{c_score}}</text>
+      </view>
+
+    </view>
+
+    <view class="c_info">
+      <view class="infos">
+        <text class="id">学分：{{credits}}</text>
+        <text class="id">考试状态：{{status}}</text>
+        <text class="id">考试性质：{{ksxz}}</text>
+      </view>
+      
+    </view>
+
+
+  </view>
+  <text class="time">{{c_time}}</text>
+
+</view>

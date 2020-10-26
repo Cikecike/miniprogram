@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "icMain": "../../../components/icMain/icMain",
+    "PopTips":"../../../components/PopTips/PopTips"
+  },
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "disableScroll": false
+}

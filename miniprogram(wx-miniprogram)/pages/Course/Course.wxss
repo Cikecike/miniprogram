@@ -1,0 +1,132 @@
+/* pages/ShoppingCart/ShoppingCart.wxss */
+.container{
+
+  width: 100%;
+  /* height:2500rpx; */
+  background-color: rgb(221, 87, 10);
+  background-repeat:repeat-y;
+  background-size:cover;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583226778063&di=6596a9b5318ca0f7cb691720744164d3&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F9%2F570ef2584fef6.jpg');
+}
+
+.blocker{
+  /* padding: 10rpx 0 0 0; */
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10rpx 3rpx 0 3rpx;
+  
+}
+
+
+/*导航*/
+.nav_warp{
+  width: 750rpx;
+  background-color: #c3ccdb;
+
+}
+
+.nav{
+  white-space: nowrap;
+}
+
+.nav_item{
+  text-align: center;
+
+  font-size: 25rpx;
+  width: 150rpx;
+  display: inline-block;
+
+  color: whitesmoke;
+  
+}
+
+.nav_item.active{
+  color: #db6868;
+  border-bottom: 5rpx solid #db6868;
+}
+
+
+.follow_icon{
+  position: fixed;
+  margin: 0 10rpx;
+  width:70rpx;
+  height:70rpx;
+  bottom: 30rpx;
+  right: 20rpx;
+}
+
+.Pages{
+  /* width: 100%; */
+}
+
+
+.Pageholder{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.label_container{
+  padding: 10rpx 0 0 0;
+  width: 30rpx;
+  background-color: #c3ccdbbe;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.time_label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25rpx;
+  font-weight: bolder;
+
+  width: 30rpx;
+  height: 152rpx;
+  color: rgba(255, 255, 255, 0.616);
+
+  
+  border-bottom-width: 5rpx;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: solid;
+
+  border-color: rgba(255, 255, 255, 0.295);
+
+  /* background-color: rebeccapurple; */
+}
+
+.labels{
+  display: flex;
+  flex-direction: column;
+  height: 302rpx;
+  width: 25rpx;
+
+  /* border-radius: 15rpx; */
+
+  font-size: 30rpx;
+  color: rgb(253, 249, 249);
+
+
+
+  margin: 0 0 10rpx 0;
+
+
+  /* border-bottom-width: 5rpx; 
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: solid; */
+
+}
+
+.colunms{
+  /* height:610rpx; */
+
+}
+

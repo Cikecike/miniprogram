@@ -1,0 +1,92 @@
+/* components/itemCard.wxss */
+
+.container{
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 20rpx 0 0 20rpx;
+  background-color: rgb(253, 253, 253);
+
+  width: 715rpx;
+  height: 230rpx;
+
+  border-radius: 20rpx;
+}
+.drawer_content{
+  height: 170rpx;
+}
+
+
+.cname{
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+
+  width: 300rpx;
+
+  font-size: 35rpx;
+  font-weight: bold;
+  height: 100;
+}
+
+.c_info{
+  display: flex;
+  flex-direction: column;
+  margin:10rpx 0 0 0;
+}
+
+.infos{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20rpx 0 0 20rpx;
+}
+
+.id{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25rpx;
+  margin: 10rpx 40rpx 10rpx 0;
+}
+
+.time{
+    font-size: 25rpx;
+    color: gainsboro;
+    font-weight: bold;
+    text-align: right;
+    margin: 10rpx 20rpx 0 0
+}
+
+.headers{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0 0 20rpx;
+}
+
+.Score{
+  display: flex;
+  text-align: right;
+  margin: 0 0 0 100rpx;
+  font-size: 30rpx;
+  font-weight: bold
+}
+
+.None_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tips{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx;
+  font-weight: bolder;
+  color: rgba(192, 187, 187, 0.61);
+}

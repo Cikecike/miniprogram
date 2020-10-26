@@ -1,0 +1,12 @@
+<!--components/itemCard.wxml-->
+<view class="container">
+  <!--店铺url跳转-->
+  <navigator clas="itemCard" url="../../otherPackages/pages/ItemPage/ItemPage" hover-class="click">
+    <!--商品信息区域-->
+      <image src="../../icons/1.jpg" mode="scaleToFill" class="Goods_Img" />
+      <!--商品属性区域-->
+      <text class="infoText">
+        【王小二】广西直邮，3斤只要9.9包邮
+      </text>
+  </navigator>
+</view>

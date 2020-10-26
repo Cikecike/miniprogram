@@ -1,0 +1,11 @@
+/* components/courseBlock.wxss */
+.emptyBlock{
+  display: flex;
+  flex-direction: column;
+  width: 94rpx;
+  height: 300rpx;
+  border-radius: 5rpx;
+  margin:0 5rpx 10rpx 5rpx;
+  font-size: 20rpx;
+  /* background-color: red; */
+}

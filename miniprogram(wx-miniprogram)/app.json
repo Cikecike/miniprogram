@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/HomePage/HomePage",
+    "pages/Course/Course",
+    "pages/userpage/userpage"
+  ],
+  "subPackages": [
+    {
+      "root": "otherPackages",
+      "pages": [
+        "pages/index/index",
+        "pages/databaseGuide/databaseGuide",
+        "pages/addFunction/addFunction",
+        "pages/deployFunctions/deployFunctions",
+        "pages/chooseLib/chooseLib",
+        "pages/openapi/openapi",
+        "pages/openapi/serverapi/serverapi",
+        "pages/openapi/callback/callback",
+        "pages/openapi/cloudid/cloudid",
+        "pages/im/im",
+        "pages/im/room/room",
+        "pages/ItemPage/ItemPage",
+        "pages/Orders/Orders",
+        "pages/scoreBrowser/scoreBrowser",
+        "pages/COVID-19/COVID-19",
+        "pages/InfoConfigPage/InfoConfigPage",
+        "pages/Arcticle/Arcticle",
+        "pages/Aticle_poster/Aticle_poster"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#c3ccdb",
+    "navigationBarTitleText": "University Unite",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#c3ccdb",
+    "disableScroll": true
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#c3ccdb",
+    "selectedColor": "#db6868",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/HomePage/HomePage",
+        "text": "首页",
+        "iconPath": "icons/Img_Normal.png",
+        "selectedIconPath": "icons/Img_Selected.png"
+      },
+      {
+        "pagePath": "pages/Course/Course",
+        "text": "课表",
+        "iconPath": "icons/course.png",
+        "selectedIconPath": "icons/course_selected.png"
+      },
+      {
+        "pagePath": "pages/userpage/userpage",
+        "text": "我的信息",
+        "iconPath": "icons/info.png",
+        "selectedIconPath": "icons/info_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

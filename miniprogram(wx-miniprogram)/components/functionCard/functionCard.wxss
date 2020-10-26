@@ -1,0 +1,60 @@
+/* components/functionCard/functionCard.wxss */
+
+.line{
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx;
+}
+
+.container{
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20rpx 10rpx 20rpx;
+  /* background-color: rgba(93, 138, 150, 0.644); */
+  border-radius: 15rpx;
+  border-top-width: 1rpx;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1rpx;
+  border-style:solid;
+  border-color: rgba(220, 220, 220, 0.664);
+
+
+}
+
+.course{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200rpx;
+  height: 100rpx;
+  background-color: rgb(255, 255, 255);
+  /* background-color: rebeccapurple; */
+  font-size: 25rpx;
+  /* background: url("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3180785379,2986313120&fm=26&gp=0.jpg"); */
+  /* color: rgb(82, 107, 160); */
+  font-weight: bold;
+}
+
+.bt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200rpx;
+  height: 100rpx;
+  background-color: rgb(255, 255, 255);
+  /* background-color: rebeccapurple; */
+  font-size: 25rpx;
+  /* color: white; */
+  font-weight: bold;
+}
+
+
+
+.bt_hover{
+  background-color: rgba(169, 169, 169, 0.555);
+}

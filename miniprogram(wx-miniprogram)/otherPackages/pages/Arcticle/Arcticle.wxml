@@ -1,0 +1,100 @@
+<!--miniprogram/pages/ItemPage.wxml-->
+<!--pages/BrowseGoods/BrowseGoods.wxml-->
+<view class="ItemPage">
+
+</view>
+
+
+<view class="Title">
+  <view class="tcontainer">
+    <view class="title_line"></view>
+    <text class="title_info">{{article['Title']}}</text>
+  </view>
+  <view class="poster">
+    <text class="time">{{article['Time']}}</text>
+    <text class="poster_id">{{article['Author']}}</text>
+  </view>
+
+</view>
+
+<!-- 正文内容 -->
+<view class="acticle">
+  <text class="introdution">{{article['Content']}} </text>
+  <!-- <image class="arct_img" src="../../../icons/3.jpg"></image> -->
+
+</view>
+
+
+
+
+
+<view class="footer-holder"></view>
+
+<!-- 评论区 -->
+<view class="comment_header">
+  <text class="comment_t">热门评论</text>
+</view>
+
+<!-- 评论内容 -->
+<view class="Comments">
+  <view class="comments_container" wx:for="{{article['comments'][0]}}" wx:for-item="comment">
+
+    <view class="comment" bindtap="recom" data-key="{{comment['Comment_key']}}">
+      <view class="img_container">
+        <image class="comer_img" src="{{comment['User_img_Url']}}"></image>
+      </view>
+
+      <view class="com">
+        <text class="comer_id">{{comment['Comer_id']}}</text>
+        <text class="time">{{comment['Comm_time']}}</text>
+        <text class="com_text">{{comment['Comment_text']}}</text>
+      </view>
+
+    </view>
+
+  </view>
+</view>
+
+<block wx:if="{{article['comments'][0].length===0}}">
+  <view class="None_info">
+    <!-- <image class="empty" src='../../../icons/empty.png'></image> -->
+    <text class="tips">还没有人评论呢</text>
+  </view>
+</block>
+
+
+
+<view class="footer-holder">
+</view>
+<block wx:if="{{!input_focus}}">
+  <view class="footer_fixed-bottom" style="position:fixed;bottom:0;">
+    <view class="coment_bt">
+      <button class="bt" bindtap="input_" hover-class="bt_hover">写评论</button>
+    </view>
+    <view class="coment_bt">
+      <button class="bt1"  bindtap="input_">留言数:{{article['counter']['comment']}}</button>
+    </view>
+    <view class="coment_bt">
+      <button class="bt1" bindtap="like_artic" hover-class="bt_hover">点赞数:{{article['counter']['like']}}</button>
+    </view>
+    <button class="share" open-type="share" bindtap="onShareAppMessage" hover-class="bt_hover">● ● ●
+    </button>
+  </view>
+</block>
+
+<block wx:else="{{input_focus}}">
+  <view class="footer_fixed-bottom" style="position:fixed;bottom:0;">
+    <view class="coment_in">
+      <input class="input" value="{{comment_value}}" focus="{{input_focus}}" bindinput='commentsInput' bindblur="inputBlur" placeholder="输入你的评论" hover-class="bt_hover"></input>
+      <button class="submit_bt" bindtap="submit">发送</button>
+    </view>
+  </view>
+</block>
+
+
+<view bindtap='getArticle' style="opacity:0.8">
+    <image class="follow_icon" src="{{imgSrc}}"></image>
+</view>
+
+
+<PopTips title="提示" msg="请授权后使用此功能" showModalStatus="{{PopStatus}}"></PopTips>
