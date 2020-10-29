@@ -1,0 +1,16 @@
+
+<view class="drawer_screen" data-statu="open" wx:if="{{showModalStatus}}"></view>  
+<!--content-->  
+<!--使用animation属性指定需要执行的动画-->  
+<view animation="{{animationData}}" style=''  class="drawer_box" wx:if="{{showModalStatus}}">  
+  <!--drawer content-->
+  <!-- <view class="circle"></view>   -->
+  <view class="drawer_content">   
+    <text class="title">{{title}}</text>
+    <text class="msg">{{msg}}</text>
+    <view class="bt_con">
+      <button bindtap="close" class="cancel">{{leftbtText}}</button>
+      <button bindtap="ok"  open-type="getUserInfo" class="ok">{{rightbtText}}</button>
+    </view>
+  </view>  
+</view>
